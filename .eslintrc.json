@@ -5,6 +5,8 @@
       "jest": true
   },
   "extends": [
+      "prettier",
+      "plugin:prettier/recommended",
       "airbnb-base",
       "plugin:@typescript-eslint/recommended"
   ],
@@ -14,6 +16,7 @@
       "sourceType": "module"
   },
   "plugins": [
+      "prettier",
       "@typescript-eslint",
       "eslint-plugin-import-helpers"
   ],
@@ -56,7 +59,8 @@
     "import/no-extraneous-dependencies": [
       "error",
       { "devDependencies": ["**/*.spec.js"] }
-    ]
+    ],
+    "prettier/prettier": "error"
   },
   "settings": {
       "import/resolver": {
