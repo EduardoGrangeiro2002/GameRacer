@@ -1,0 +1,14 @@
+{
+    "type": "postgres",
+    "port": 5432,
+    "host": "localhost", 
+    "username": "admin",
+    "password": "12904170",
+    "database": "racer", 
+    "synchronize": "true",
+    "migrations": ["./BackEnd/src/database/migrations/*.ts"],
+    "entities": ["./BackEnd/src/modules/**/Entities/*.ts"],
+    "cli": {
+      "migrationsDir": "./BackEnd/src/database/migrations"
+    }
+  }

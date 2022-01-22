@@ -15,10 +15,13 @@ class User {
   @Column()
   password: string;
 
+  points: number;
+
   @CreateDateColumn()
   created_at: Date;
 
-  constructor() {
+  constructor(points = 0) {
+    this.points = points;
     if (!this.id) {
       this.id = uuidv4();
     }
