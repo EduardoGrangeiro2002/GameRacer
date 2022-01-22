@@ -25,9 +25,7 @@ class UserRepository implements IUserRepositories {
     await this.repository.save(User);
   }
   async listAllUsers(): Promise<User[]> {
-    const users = await this.repository.find();
-
-    return users;
+    return this.repository.createQueryBuilder("users").getMany();
   }
 }
 
