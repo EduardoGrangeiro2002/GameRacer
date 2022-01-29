@@ -17,6 +17,8 @@ interface IUserRepositories {
   listAllUsers(): Promise<User[]>;
 
   findUserByUsername(username: string): Promise<User>;
+
+  findById(id: string): Promise<User>;
 }
 
 export { IUserRepositories, IUserRepositoriesDTO };
