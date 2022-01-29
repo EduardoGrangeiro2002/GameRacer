@@ -42,10 +42,16 @@ class authenticateUseCase {
       subject: user.id,
       expiresIn: "1d",
     });
-    return {
-      user,
+
+    const tokenReturn: IResponse = {
+      user: {
+        username: user.username,
+        email: user.email,
+      },
       token,
     };
+
+    return tokenReturn;
   }
 }
 
