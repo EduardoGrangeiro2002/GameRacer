@@ -1,3 +1,4 @@
+import cors from "cors";
 import Express, { NextFunction, Request, Response } from "express";
 
 import "express-async-errors";
@@ -13,6 +14,8 @@ const app = Express();
 
 const PORT = 3333;
 app.use(Express.json());
+
+app.use(cors());
 
 app.use(router);
 
