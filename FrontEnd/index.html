@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <title>GameRacing</title>
 </head>
 <body>
@@ -24,16 +24,17 @@
 
 
 
-        <h3 class="h3">Crie sua conta</h3>
+       
         
-        <input class="input" type="text" placeholder="Username">
-        <input class="input" type="text" placeholder="Password">
-        <button class="login">Login</button>
+        <input id="username" class="input" type="text" placeholder="Username">
+        <input id="password" class="input" type="text" placeholder="Password">
+        <span id="error" ></span>
+        <button  onclick="sessions.login();"   id="btn-login" class="login">Login</button>
 
         <div class="checkbox">
 
             <label class="label" for = "lembrar-me"> Lembrar-me </label>
-            <input type = "checkbox" id = "lembrar-me" value = "lembrar-me">
+            <input checked type = "checkbox" id = "lembrar-me" value = "lembrar-me">
             
         </div>
 
@@ -57,5 +58,9 @@
   
   <img class="img-cars" src="./assets/Cermin Kereta Windscreen Specialist.jpeg" alt="">
 
+
+
+  
+  <script src="./scripts/login.js"></script>
 </body>
 </html>
