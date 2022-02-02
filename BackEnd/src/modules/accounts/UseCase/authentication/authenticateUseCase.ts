@@ -32,8 +32,6 @@ class authenticateUseCase {
     }
     const passwordMatch = await compare(password, user.password);
 
-    console.log(`senha:${passwordMatch}`);
-
     if (!passwordMatch) {
       throw new AppError("Username or password  incorrect");
     }

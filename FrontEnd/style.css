@@ -42,10 +42,12 @@
 .contact{
     position: fixed;
     text-align: center;
+    font-size: 10px;
     bottom: 0;
     left: 0;
     width: 50%;
-    padding-bottom: 12vh;
+    margin-top: 10px;
+    padding-bottom: 10px;
     background-color:  #232323;
 
 }
@@ -74,5 +76,15 @@
     display: block;
     margin: 12px;
     font-size: 12px;
+}
+
+.contact-h3{
+    margin: 20px;
+}
+
+.img-cars{
+    float: right;
+    width: 50%;
+    height: 100vh;
 }
 
