@@ -29,6 +29,14 @@ const sessions = {
         return json;
       });
   },
+  checkLogin(object) {
+    if (!object.token) {
+      throw new Error("Usuário não logado");
+    }
+
+    window.location.href =
+      "http://127.0.0.1:5500/FrontEnd/pages/interface.html";
+  },
 
   error(object) {
     const messageError = document.getElementById("error");
@@ -36,18 +44,12 @@ const sessions = {
     if (!object.message) {
       messageError.innerHTML = "";
 
-      checkLogin(object);
+      this.checkLogin(object);
 
       return;
     }
     messageError.innerHTML = object.message;
   },
-
-  checkLogin(object) {
-    if (!object.token) {
-      throw new Error("Usuário não logado");
-    }
-  },
 };
 
-export { sessions };
+module.exports = { sessions };
