@@ -34,18 +34,17 @@ const CreateUsers = {
 
     fetch(this.URL, options)
       .then(res => {
+        this.checkLogin(res.status);
         return res.json();
       })
       .then(json => {
         this.messageError(json);
-
         return json;
       });
   },
 
   messageError(object) {
     const messageError = document.getElementById("error");
-
     if (!object.message) {
       messageError.innerHTML = "";
     }
@@ -92,4 +91,13 @@ const CreateUsers = {
         break;
     }
   },
+  checkLogin(status) {
+    if (status === 201) {
+      window.location.href = "http://127.0.0.1:5500/FrontEnd/";
+    }
+  },
+};
+
+module.exports = {
+  CreateUsers,
 };

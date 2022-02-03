@@ -93,3 +93,10 @@
     padding: 15px;
     cursor: pointer;
 }
+
+
+p{
+    font-size: 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
