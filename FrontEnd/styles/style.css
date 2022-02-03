@@ -34,6 +34,7 @@
     border-radius: 12px;
     text-align: center;
     border: none;
+    color: white;
     background-color: #232323;
    
 }
@@ -88,3 +89,7 @@
     height: 100vh;
 }
 
+#btn-login:hover{
+    padding: 15px;
+    cursor: pointer;
+}

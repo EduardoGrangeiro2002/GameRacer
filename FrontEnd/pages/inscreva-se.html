@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>GameRacing</title>
+</head>
+<body>
+
+  <div id="container">  
+
+    <header >
+
+        <h1 class="titulo">GameRacing</h1>
+
+    </header>
+
+    <main>
+
+
+
+       
+        <input id="email" class="input" type="text" placeholder="Email">
+        <span class="msg-error" id="email-msg"></span>
+
+        <input id="username" class="input" type="text" placeholder="Username">
+        <span class="msg-error" id="username-msg"></span>
+        
+        <input id="password" class="input" type="text" placeholder="Password">
+        <span class="msg-error" id="password-msg"></span>
+        
+        <input id="re-password" class="input" type="text" placeholder="Re-Password">
+        <span class="msg-error" id="re-password-msg"></span>
+        <br>
+
+        <span id="error" ></span>
+        <button  onclick="CreateUsers.checkPassword();"   id="btn-login" class="login">Create account</button>
+
+
+
+    </main>
+
+    <footer class="contact">
+
+        <h3 class="contact-h3" >Contato para redes socias</h3>
+
+        <a  href=""><img src="../assets/GitHub.png" alt=""></a>
+        <a  href=""><img src="../assets/Linkedin.png" alt=""></a>
+        <a  href=""><img src="../assets/WhatsApp.png" alt=""></a>
+    </footer>
+
+  </div>  
+  
+  <img class="img-cars" src="../assets/Cermin Kereta Windscreen Specialist.jpeg" alt="">
+
+
+
+  <script src="../scripts/createUsers.js"></script>
+</body>
+</html>
