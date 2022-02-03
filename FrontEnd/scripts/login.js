@@ -3,6 +3,7 @@
 const sessions = {
   URL: {
     sessions: "http://192.168.1.8:3333/sessions",
+    template: "http://192.168.1.8:3333/template",
   },
 
   login() {
@@ -33,9 +34,10 @@ const sessions = {
     if (!object.token) {
       throw new Error("Usuário não logado");
     }
-
+    localStorage.setItem("token", object.token);
+    console.log(localStorage.getItem("token"));
     window.location.href =
-      "http://127.0.0.1:5500/FrontEnd/pages/interface.html";
+      "http://127.0.0.1:5500/BackEnd/src/modules/templates/interface.html";
   },
 
   error(object) {
